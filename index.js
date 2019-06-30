@@ -41,7 +41,7 @@ function getParkList(searchState, maxResults) {
     .then(responseJson => displayResults(responseJson))
     .catch(err => {
       $('.js-error').text(`Something went wrong: ${err.message}`);
-    };
+    });
 
 function watchForm() {
   $('.js-form').submit(event => {
