@@ -42,6 +42,7 @@ function getParkList(searchState, maxResults) {
     .catch(err => {
       $('.js-error').text(`Something went wrong: ${err.message}`);
     });
+  };
 
 function watchForm() {
   $('.js-form').submit(event => {
