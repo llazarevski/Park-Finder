@@ -38,7 +38,7 @@ function getParkList(searchState, maxResults) {
       }
       throw new Error(response.statusText);
     })
-    .then(responseJson => displayResults(responseJson));
+    .then(responseJson => displayResults(responseJson))
     .catch(err => {
       $('.js-error').text(`Something went wrong: ${err.message}`);
     };
